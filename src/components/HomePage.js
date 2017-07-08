@@ -96,12 +96,7 @@ export default class HomePage extends React.Component {
                 justifyContent: 'space-around'
               }}
             >
-              <div
-                style={{
-                  display: 'flex',
-                  alignItems: 'center'
-                }}
-              >
+              <div>
                 <img
                   src="/images/unimelb01.jpg" alt="ooops!"
                   style={{maxWidth: '100%', height: '12em'}}/>
@@ -110,12 +105,7 @@ export default class HomePage extends React.Component {
                   <p> Master of Engineering (Software)</p>
                 </div>
               </div>
-              <div
-                style={{
-                  display: 'flex',
-                  alignItems: 'center'
-                }}
-              >
+              <div>
                 <img
                   src="/images/travelsky01.jpg" alt="ooops!"
                   style={{maxWidth: '100%', width: '12em'}}/>

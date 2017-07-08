@@ -15,6 +15,9 @@ class ScrollTopButton extends React.Component {
     };
   }
 
+  componentWillMount() {
+  }
+
   scrollStep() {
     if (window.pageYOffset === 0) {
       clearInterval(this.state.intervalId);
@@ -34,9 +37,6 @@ class ScrollTopButton extends React.Component {
           padding: 0,
           border: '2px solid #fff',
           borderRadius: '30px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
         }}
         hoveredStyle={{backgroundColor: '#fff'}}
         iconStyle={{
@@ -45,8 +45,8 @@ class ScrollTopButton extends React.Component {
         }}
         disableTouchRipple
         onMouseOver={() => this.setState({hoverChild: true})}
-        onMouseOut={() => this.setState({hoverChild: false})}
-        onClick={() => this.scrollToTop()}
+        onMouseLeave={() => this.setState({hoverChild: false})}
+        onTouchTap={() => this.scrollToTop()}
       >
         <IconUp
           color={this.state.hoverChild ? '#000' : '#fff'}
